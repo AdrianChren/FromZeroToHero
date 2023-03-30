@@ -1,0 +1,41 @@
+<HTML>
+  <HEAD>
+  	<TITLE>Login to ITFZTH webshop</TITLE>
+   
+  </HEAD>
+
+  <BODY>
+  	
+  <form action="shop.html" method="GET" id="loginForm" onsubmit="return verifyLoginAndSubmitForm()">
+    <table style="background-color:gold;" border="1">
+      <tr>
+        <td>Login</td>
+        <td><input type="text" id="name_text_box" name="login_param"></td>
+        <td><label id="wrong_user_name_label" hidden="true" > Wrong Login </label> </td>
+      </tr>
+      <tr>
+        <td>Password</td> 
+        <td><input type="password" id="password_text_box" name="password_param"></td>
+        <td><label id="wrong_password_label" hidden="true">Wrong Password</label> </td>
+      </tr>
+      <tr> 
+       <td></td> 
+       <td> <input type="submit" id="submit_button" value="Posli"> </td> 
+       <td> <input type="reset" id="reset_button" value="Zmaz"></td> 
+      </tr>
+    </table>
+  </form>
+
+
+<script >
+
+function verifyLoginAndSubmitForm() {
+   alert("submitol som");
+   return true;
+}
+   
+</script>
+
+  </BODY>
+
+</HTML>
