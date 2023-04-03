@@ -1,0 +1,36 @@
+body {
+    background-color:#dfe4ea;
+}
+
+#LoginBox {
+    position: relative;
+    top: 10%;
+    left: 30%;
+}
+
+img {
+    position: relative;
+    float: left;
+    margin-top: 35px;
+    height: 80px;
+    margin-left: 20px;
+    
+}
+
+#loginform {
+    position: absolute;
+    border-collapse: collapse;
+    margin: 25px 0;
+    padding: 10px;
+    width: 600px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    justify-content:flex-end;
+}
+
+
+
+
+
+
+
