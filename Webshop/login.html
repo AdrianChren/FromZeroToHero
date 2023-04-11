@@ -6,7 +6,7 @@
 
   <BODY>
   	
-  <form action="shop.html" method="GET" id="loginForm" onsubmit="return verifyLoginAndSubmitForm()">
+  <form action="shop.html" method="GET" id="loginForm" onsubmit="return jankoHrasko()">
     <table style="background-color:gold;" border="1">
       <tr>
         <td>Name</td>
@@ -29,10 +29,47 @@
 
 <script >
 
-function verifyLoginAndSubmitForm() {
-   alert("submitol som");
-   return true;
+function validateUserNameAndPassword() {
+  /* Z login_param vycitaj hodnotu ktoru pouzivate zadal */ 
+  /* Z password_param vycitaj hodnotu ktoru pouzivate zadal */ 
+  /* Zvaliduj ci je login spravny. Ked je login spravny zvaliduj aj heslo, ked nie je spravny vypis erro panel Wrong Login
+  a nepust pouzivatela do Eshop stranky*/
+  /*Ked je aj password spravny tak pust pouzivatela dalej na Eshop*/
 }
+
+function jankoHrasko() {
+  var funkciouVypocitanySumar = sucet(12,36);
+  alert(funkciouVypocitanySumar);
+  return false;
+}
+
+function eliska() {
+  alert("druhy prikaz Elisky")
+  cervenaCiapocka();
+  alert("prvy prikaz Elisky");
+}
+
+function cervenaCiapocka() {
+  mackaAmys("Tom", "Jerry");
+  alert("prve volanie cervenej ciapocky");
+}
+
+function mackaAmys(menoMacky, menoMysi) {
+  sucet(5,10);
+  alert(menoMacky+" a "+menoMysi);
+}
+
+function sucet(cisloA, cisloB) {
+  var sumar = cisloA + cisloB;
+  var incrementOjedna = sumar + 1;
+  var incrementODva = incrementOjedna +2;
+  return cisloA;
+}
+
+function vypisSucet(sucetNaVypis){
+  alert(sucetNaVypis);
+}
+
    
 </script>
 
