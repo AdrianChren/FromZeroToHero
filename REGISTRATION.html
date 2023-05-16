@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>ITZFH Registration</title>
+  <style>
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
+    }
+
+    table {
+      border-collapse: collapse;
+    }
+
+    th, td {
+      border: 1px solid black;
+      padding: 8px;
+    }
+  </style>
+</head>
+<body>
+  <h1>ITZFH REGISTRATION</h1>
+  <p>Fill out the form in order to register into the ITZFH Webshop portal</p>
+  <p>All fields are required</p>
+  <img src="ZeroToHero_logo.jpg" alt="ZeroToHero " class="center">
+  <form>
+   
+
+    <table>
+      <tr>
+        <td>Title:</td>
+        <td>
+          <select id="title" name="title" required>
+            <option value="">--Please select--</option>
+            <option value="mr">Mr.</option>
+            <option value="ms">Ms.</option>
+            <option value="mrs">Mrs.</option>
+            <option value="dr">Dr.</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>First Name:</td>
+        <td><input type="text" id="firstname" name="firstname" required></td>
+      </tr>
+      <tr>
+        <td>Last Name:</td>
+        <td><input type="text" id="lastname" name="lastname" required></td>
+      </tr>
+      <tr>
+        <td>Email:</td>
+        <td><input type="email" id="email" name="email" required></td>
+      </tr>
+      <tr>
+        <td>Telephone:</td>
+        <td><input type="tel" id="telephone" name="telephone" required></td>
+      </tr>
+      <tr>
+        <td>Password:</td>
+        <td><input type="password" id="password" name="password" required></td>
+      </tr>
+      <tr>
+        <td>Confirm Password:</td>
+        <td><input type="password" id="confirm_password" name="confirm_password" required></td>
+      </tr>
+      <tr>
+        <td>State:</td>
+        <td><input type="text" id="state" name="state" required></td>
+      </tr>
+      <tr>
+        <td>City:</td>
+        <td><input type="text" id="city" name="city" required></td>
+      </tr>
+      <tr>
+        <td>Address:</td>
+        <td><textarea id="address" name="address" required></textarea></td>
+      </tr>
+    </table>
+
+    <input type="submit" value="Submit">
+  </form>
+  <label for="marketing">Marketing:</label>
+  <br>
+  <input type="radio" id="marketing-yes" name="marketing" value="yes" checked>
+  <label for="marketing-yes">I wish to receive marketing and promotional emails</label>
+  <br>
+  <input type="radio" id="marketing-no" name="marketing" value="no">
+  <label for="marketing-no">I don't want to receive marketing and promotional emails</label>
+  <br><br>
+  <a href="file:///C:/Users/42194/Downloads/terms%20and%20conditions.html">ITFZTH terms and conditions </a>
+  <p>
+    <input type="checkbox" name="terms" id="terms" value="accept" required>
+    <label for="terms">Accept terms and conditions:</label>
+     <br>
+     <table style="border: 1px solid black;">
+     <tr>
+       <th>We could delete your account:</th>
+     </tr>
+     <tr>
+       <td>1. if you abuse the website</td>
+     </tr>
+     <tr>
+       <td>2. if you post inappropriate content</td>
+     </tr>
+     <tr>
+       <td>3. if you are not using real personal information</td>
+     </tr>
+   </table>
+   <button type="button">Register</button>
+<button type="button">Reset</button>
+</body>
+</html>
