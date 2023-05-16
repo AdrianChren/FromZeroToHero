@@ -59,40 +59,40 @@
 <body>
     <div class="container">
         <div class="left-section">
-            <table>
-                <tr>
-                    <td colspan="2"><h2>Sign in and Start Your Shopping</h2></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><hr></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><h2 style="text-align: center;">Quick Sign in</h2></td>
-                </tr>
-                <tr>
-                    <td><label for="username">Username:</label></td>
-                    <td><input type="text" id="username" name="username" required></td>
-                </tr>
-                <tr>
-                    <td colspan="2"><span id="usernameError" class="error"></span></td>
-                </tr>
-                <tr>
-                    <td><label for="password">Password:</label></td>
-                    <td>
-                        <input type="password" id="password" name="password" required>
-                        <p class="error">Use at least one letter, one numeral, and seven characters.</p>
-                    </td>
-                </tr>
-                <tr>
-                    <td colspan="2"><span id="passwordError" class="error"></span></td>
-                </tr>
+         
             </table>
+        </div>
+        <div class="right-section">
+            <h2>Quick Sign in</h2>
+            <form id="loginForm">
+                <table>
+                    <tr>
+                        <td><label for="username">Username:</label></td>
+                        <td><input type="text" id="username" name="username" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><span id="usernameError" class="error"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td>
+                            <input type="password" id="password" name="password" required>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><span id="passwordError" class="error"></span></td>
+                    </tr>
+                </table>
                 <button type="submit" class="login-button">Login</button>
                
 <button type="reset" class="reset-button">Reset</button>
 </form>
 </div>
-</div><script>
+</div>
+
+
+<script>
     const loginForm = document.getElementById("loginForm");
     const usernameInput = document.getElementById("username");
     const passwordInput = document.getElementById("password");
