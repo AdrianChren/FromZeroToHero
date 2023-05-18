@@ -1,1 +1,178 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Page</title>
+    <img src="https://github.com/AdrianChren/FromZeroToHero/blob/main/ITFZTHShop/img/ZeroToHero_logo.png?raw=true" alt="logo">
+    <h1 id="headline">IT FROM Zero to Hero Webshop</h1>
+	<hr>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:#f6fbff;
+            color: #3e3e3d
+        }
 
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 800px;
+            margin: 50px auto;
+        }
+        img {
+            display:inline;
+            max-height: 70px;
+            z-index: 5;
+        }
+        #headline {
+            display:inline;
+            margin-left: 20px;
+            align-items:center;
+            justify-content:center;
+            margin-left: 40px;
+            text-align: center;
+        }
+        .left-section .right-section {
+            display: flex;
+            justify-content: space-between;
+        }
+        .left-section {
+            min-width: 400px;
+            padding-bottom: 100px;
+            flex-grow: 1 1 auto;
+            padding-right: 70px;
+        }
+
+        .right-section {
+            width: 300px;
+            padding: 10px 55px 40px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 5%;
+            background-color: white;
+            
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        table {
+            width: 100%;
+            height: 90px;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-collapse: collapse;
+            /*border: 1px solid #ddd;*/
+            
+        }
+
+        table td {
+            padding: 5px;
+        }
+
+        .error {
+            color: red;
+            font-size: 13px;
+            display:block;
+            align-content: end;
+            text-align:end;
+        }
+
+        .login-button,
+        .reset-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-top: 20px;
+            background-color: #52a2d9;
+            border-radius: 50px;
+            color: white;
+            font-size: 17px;
+            font-weight: 600;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <h1>Welcome on our IT from<br>Zero To Hero Webshop</h1>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor laoreet ante. Sed ullamcorper suscipit ipsum. Morbi a dictum mauris, ac ornare arcu. Integer sit amet ornare mauris, id consequat augue. 
+            </table>
+        </div>
+        <div class="right-section">
+            <h2>Sign in & Start Your Shopping</h2>
+            <form id="loginForm">
+                <table>
+                    <tr>
+                        <td><label for="username">Username:</label></td>
+                        <td><input type="text" id="username" name="username" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><span id="usernameError" class="error"></span></td>
+                    </tr>
+                    <tr>
+                        <td><label for="password">Password:</label></td>
+                        <td>
+                            <input type="password" id="password" name="password" required>
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><span id="passwordError" class="error"></span></td>
+                    </tr>
+                </table>
+                <button type="submit" class="login-button">Login</button>
+               
+<button type="reset" class="reset-button">Reset</button>
+</form>
+</div>
+</div>
+
+
+<script>
+    const loginForm = document.getElementById("loginForm");
+    const usernameInput = document.getElementById("username");
+    const passwordInput = document.getElementById("password");
+    const usernameError = document.getElementById("usernameError");
+    const passwordError = document.getElementById("passwordError");
+
+    loginForm.addEventListener("submit", function (event) {
+        event.preventDefault();
+
+        usernameError.textContent = "";
+        passwordError.textContent = "";
+
+        const username = usernameInput.value;
+        const password = passwordInput.value;
+
+        // Hard-coded login credentials
+        const validUsernames = ["Valik", "Peter", "Adrian", "Tina"];
+        const validPassword = "secret";
+
+        if (!validUsernames.includes(username)) {
+            usernameError.textContent = "Wrong username";
+            return;
+        }
+
+        if (password !== validPassword) {
+            passwordError.textContent = "Wrong password";
+            return;
+        }
+
+        // Successful login, redirect to webshop page
+        window.location.href = "webshop.html";
+    });
+
+    // Reset form fields
+    const resetButton = document.querySelector(".reset-button");
+    resetButton.addEventListener("click", function () {
+        usernameInput.value = "";
+        passwordInput.value = "";
+        usernameError.textContent = "";
+        passwordError.textContent = "";
+    });
+</script>
+</body>
+</html>
