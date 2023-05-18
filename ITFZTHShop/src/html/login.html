@@ -2,11 +2,14 @@
 <html>
 <head>
     <title>Login Page</title>
-    <h1>IT FROM Zero to Hero Webshop</h1>
+    <img src="https://github.com/AdrianChren/FromZeroToHero/blob/main/ITFZTHShop/img/ZeroToHero_logo.png?raw=true" alt="logo">
+    <h1 id="headline">IT FROM Zero to Hero Webshop</h1>
 	<hr>
     <style>
         body {
             font-family: Arial, sans-serif;
+            background-color:#f6fbff;
+            color: #3e3e3d
         }
 
         .container {
@@ -16,14 +19,37 @@
             width: 800px;
             margin: 50px auto;
         }
-
+        img {
+            display:inline;
+            max-height: 70px;
+            z-index: 5;
+        }
+        #headline {
+            display:inline;
+            margin-left: 20px;
+            align-items:center;
+            justify-content:center;
+            margin-left: 40px;
+            text-align: center;
+        }
+        .left-section .right-section {
+            display: flex;
+            justify-content: space-between;
+        }
         .left-section {
-            flex-grow: 1;
-            padding-right: 50px;
+            min-width: 400px;
+            padding-bottom: 100px;
+            flex-grow: 1 1 auto;
+            padding-right: 70px;
         }
 
         .right-section {
             width: 300px;
+            padding: 10px 55px 40px;
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            border-radius: 5%;
+            background-color: white;
+            
         }
 
         h2 {
@@ -32,8 +58,12 @@
 
         table {
             width: 100%;
+            height: 90px;
+            margin-top: 40px;
+            margin-bottom: 20px;
             border-collapse: collapse;
-            border: 1px solid #ddd;
+            /*border: 1px solid #ddd;*/
+            
         }
 
         table td {
@@ -42,7 +72,10 @@
 
         .error {
             color: red;
-            font-size: 12px;
+            font-size: 13px;
+            display:block;
+            align-content: end;
+            text-align:end;
         }
 
         .login-button,
@@ -51,8 +84,11 @@
             width: 100%;
             padding: 10px;
             margin-top: 20px;
-            background-color: #4CAF50;
+            background-color: #52a2d9;
+            border-radius: 50px;
             color: white;
+            font-size: 17px;
+            font-weight: 600;
             border: none;
             cursor: pointer;
         }
@@ -61,11 +97,12 @@
 <body>
     <div class="container">
         <div class="left-section">
-         
+            <h1>Welcome on our IT from<br>Zero To Hero Webshop</h1>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor laoreet ante. Sed ullamcorper suscipit ipsum. Morbi a dictum mauris, ac ornare arcu. Integer sit amet ornare mauris, id consequat augue. 
             </table>
         </div>
         <div class="right-section">
-            <h2>Quick Sign in</h2>
+            <h2>Sign in & Start Your Shopping</h2>
             <form id="loginForm">
                 <table>
                     <tr>
