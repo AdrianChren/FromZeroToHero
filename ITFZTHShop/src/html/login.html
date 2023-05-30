@@ -149,7 +149,7 @@
         const username = usernameInput.value;
         const password = passwordInput.value;
 
-        // Hard-coded login credentials
+        
         const validUsernames = ["Valik", "Peter", "Adrian", "Tina"];
         const validPassword = "secret";
 
@@ -163,11 +163,11 @@
             return;
         }
 
-        // Successful login, redirect to webshop page
+       
         window.location.href = "webshop.html";
     });
 
-    // Reset form fields
+    
     const resetButton = document.querySelector(".reset-button");
     resetButton.addEventListener("click", function () {
         usernameInput.value = "";
