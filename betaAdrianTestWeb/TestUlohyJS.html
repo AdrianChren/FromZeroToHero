@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>Ulohy JS test</title>
+</head>
+<body>
+    <h1>Vysledky uloh sa nachadzaju v console</h1>
+<script>
+// Spravit nasledujuce ulohy:
+//1. Spravit metodu ktora vo for cyckle preiteruje pole [1,2,3,4,5,6,7,8] a vypise kazde jedno cislo
+    var pole = [1,2,3,4,5,6,7,8];
+
+    for(i = 1; i <= pole.length;  i++){
+        console.log("Uloha 1");
+        //console.group();
+        console.log(i); 
+        //console.groupEnd();
+    }
+
+//2. Spravit metodu ktora preiteruje pole iba do cisla 5  [1,2,3,4,5,6,7,8] a vypise kazde jedno cislo od 1.....5
+    var pole = [1,2,3,4,5,6,7,8];
+
+    for(i = 1; i <= 5;  i++){
+        console.log("Uloha 2");
+        console.log(i); 
+    }
+
+//3. Spravit metodu ktora od zadu iteruje pole [1,2,3,4,5,6,7,8] a vypise kazde jedno cislo
+    var pole = [1,2,3,4,5,6,7,8];
+
+        console.log("Uloha 3");
+        console.log(pole); 
+    
+//4. Spravit metodu ktora preiteruje pole [1,2,3,4,5,6,7,8] a na vysledok da sucet cisel
+    var pole = [1,2,3,4,5,6,7,8];
+    let sum = 0;
+
+        for(var i = 0; i < pole.length;  i++) {
+            sum += pole [i];
+        }
+            console.log("Uloha 4");
+            console.log(sum); 
+        
+//5. Spravit medodu ktora najde najvacsi prvok v poli [1,2,3,4,5,6,7,8]
+    var pole = [1,2,3,4,5,6,7,8];    
+    let maxElement = pole[0];
+
+    for (let i = 1; i < pole.length; ++i) {
+        if (pole[i] > maxElement) {
+            maxElement = pole[i];
+        }
+    }
+        console.log("Uloha 5");
+        console.log(maxElement);
+
+//6. Spravit medodu ktora najde priemer cisel v poli [1,2,3,4,5,6,7,8]
+    var pole = [1,2,3,4,5,6,7,8]; 
+    var sum2 = 0;
+
+    for (var number of pole) {
+        sum2 += number;
+    }
+        average = sum / pole.length;
+        
+        console.log("Uloha 6");
+        console.log(average);
+  
+</script>
+</body>
+</html>
