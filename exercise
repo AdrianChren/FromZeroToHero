@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Nazov</title>
+</head>
+<body>
+
+</body>
+<script>
+//1. Spravit metodu ktora vo for cyckle preiteruje pole [1,2,3,4,5,6,7,8] a vypise kazde jedno cislo
+var array = [1, 2, 3, 4, 5, 6, 7, 8];
+
+for (var i = 0; i < array.length; i++) {
+  console.log(array[i]);
+}
+
+
+
+
+//2. Spravit metodu ktora preiteruje pole iba do cisla 5  [1,2,3,4,5,6,7,8] a vypise kazde jedno cislo od 1.....5
+function iterateArray(array) {
+  for (var i = 0; i < array.length; i++) {
+    if (array[i] > 5) {
+      break; // Ukončí iteráciu po dosiahnutí čísla 5
+    }
+    console.log(array[i]);
+  }
+}
+
+var myArray = [1, 2, 3, 4, 5, 6, 7, 8];
+iterateArray(myArray);
+//3. Spravit metodu ktora od zadu iteruje pole [1,2,3,4,5,6,7,8] a vypise kazde jedno cislo
+function reverseIterateArray(array) {
+  for (var i = array.length - 1; i >= 0; i--) {
+    console.log(array[i]);
+  }
+}
+
+var myArray = [1, 2, 3, 4, 5, 6, 7, 8];
+reverseIterateArray(myArray);
+//4. Spravit metodu ktora preiteruje pole [1,2,3,4,5,6,7,8] a na vysledok da sucet cisel
+function sumArray(array) {
+  var sum = 0;
+  for (var i = 0; i < array.length; i++) {
+    sum += array[i];
+  }
+  return sum;
+}
+
+var myArray = [1, 2, 3, 4, 5, 6, 7, 8];
+var result = sumArray(myArray);
+console.log("Sum: " + result);
+//5. Spravit medodu ktora najde najvacsi prvok v poli [1,2,3,4,5,6,7,8]
+function findMaxElement(array) {
+  var max = array[0]; // Predpokladáme, že prvý prvok je najväčší
+  for (var i = 1; i < array.length; i++) {
+    if (array[i] > max) {
+      max = array[i];
+    }
+  }
+  return max;
+}
+
+var myArray = [1, 2, 3, 4, 5, 6, 7, 8];
+var maxElement = findMaxElement(myArray);
+console.log("Max Element: " + maxElement);
+//6. Spravit medodu ktora najde priemer cisel v poli [1,2,3,4,5,6,7,8]
+function calculateAverage(array) {
+  var sum = 0;
+  for (var i = 0; i < array.length; i++) {
+    sum += array[i];
+  }
+  var average = sum / array.length;
+  return average;
+}
+
+var myArray = [1, 2, 3, 4, 5, 6, 7, 8];
+var average = calculateAverage(myArray);
+console.log("Average: " + average);
+
+</script>
+</html>
